@@ -28,16 +28,15 @@ void loop() {
     Serial.println("Perfect");
     }
   // Her begynder andet tilfælde, hvor den ene sensor er større end den anden. Servoen drejer frem. 
-  // Dette printes til s
+  // Dette printes 
   else if (sensorValue0 < sensorValue1){
     myservo.write(120);
-    int valueString = (pos1-1, pos2);
     Serial.println(sensorValue0);
     Serial.println(sensorValue1);
     Serial.println("Less");
   }
   // Sidste mulighed begynder her, servoen drejer tilbage. Resultatet og værdi printes til serial monitor
-  else if (sensorValue0 > sensorValue1 + ){
+  else if (sensorValue0 > sensorValue1){
     myservo.write(60);
     Serial.println("Over");
   }
